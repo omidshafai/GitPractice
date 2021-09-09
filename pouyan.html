@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <title>Mini Profile - Free Bootstrap CSS Template</title>
+
+    <!--
+Mini Profile Template
+https://templatemo.com/tm-530-mini-profile
+-->
+</head>
+
+<body>
+    <!-- Welcome Section -->
+    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
+        <div class="container-fluid tm-brand-container-outer">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Logo Area -->
+                    <!-- Black transparent bg -->
+                    <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+                        <div class="tm-brand-container text-center">
+                            <h1 class="tm-brand-name">امید شفائی</h1>
+                            <h1 class="tm-brand-name">پویان زراعتی</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bg-white-transparent tm-welcome-container">
+            <div class="container-fluid">
+                <div class="row h-100">
+                    <!-- Welcome Text -->
+                    <!-- White transparent bg -->
+                    <div class="col-md-12 tm-welcome-left-col">
+                        <div class="tm-welcome-left">
+                            <h2 class="tm-welcome-title">گیت چیست</h2>
+                            <p class="pb-0">
+                                گیت (به انگلیسی: Git) یک نرم‌افزار کنترل نسخه و از مدل نرم‌افزارهای آزاد و متن‌باز برای
+                                بازنگری کد منبع توزیع شده و مدیریت منبع کد است که برای دنبال کردن تغییر فایل‌های
+                                کامپیوتری و دنبال کردن کارهای انجام شده روی آن‌ها توسط افراد مختلف است. هدف اولیه این
+                                نرم‌افزار برای استفاده در پروژه‌های نرم‌افزاری بوده‌است ولی می‌توان از آن تنها برای
+                                دنبال کردن تغییر فایل‌ها هم استفاده کرد.
+                                <br />
+                                گیت ابتدا برای توسعهٔ لینوکس توسط لینوس تروالدز به وجود آمد و اکنون پروژه‌های فراوانی از
+                                آن الهام گرفته‌اند. هر دایرکتوری کاری در گیت یک مخزن کامل با تاریخچهٔ کامل تغییرها و
+                                قابلیت بازنگری آن‌ها است و برای کار با آن نیازی به دسترسی به شبکه یا سرور مرکزی وجود
+                                ندارد.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Welcome section -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+        function detectMsBrowser() {
+            using_ms_browser =
+                navigator.appName == "Microsoft Internet Explorer" ||
+                (navigator.appName == "Netscape" &&
+                    navigator.appVersion.indexOf("Edge") > -1) ||
+                (navigator.appName == "Netscape" &&
+                    navigator.appVersion.indexOf("Trident") > -1);
+
+            if (using_ms_browser == true) {
+                alert(
+                    "Please use Chrome or Firefox for the best browsing experience!"
+                );
+            }
+        }
+        function setBrandMarginTop() {
+            var bottomContainerHeight = $(".tm-welcome-container").height();
+
+            $(".tm-brand-container-outer").css({
+                "margin-top": -bottomContainerHeight + "px"
+            });
+        }
+
+        $(function () {
+            setBrandMarginTop();
+            detectMsBrowser();
+
+            // Handle window resize event
+            $(window).resize(function () {
+                setBrandMarginTop();
+            });
+        });
+    </script>
+</body>
+
+</html>
